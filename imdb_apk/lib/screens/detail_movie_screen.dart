@@ -4,10 +4,10 @@ import 'package:imdb_apk/bloc/details/details_bloc.dart';
 import 'package:imdb_apk/bloc/details/details_state.dart';
 import 'package:imdb_apk/data/model/movie.dart';
 
-class DetailNewsScreen extends StatelessWidget {
+class DetailmovieScreen extends StatelessWidget {
   final List<Movie> movie;
 
-  const DetailNewsScreen(this.movie, {Key? key}) : super(key: key);
+  const DetailmovieScreen(this.movie, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

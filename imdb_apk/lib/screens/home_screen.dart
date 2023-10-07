@@ -24,11 +24,11 @@ class HomeScreen extends StatelessWidget {
                     width: 40,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(5),
-                      color: Color.fromRGBO(127, 53, 144, 0.22),
+                      color: const Color.fromRGBO(127, 53, 144, 0.22),
                     ),
-                    child: Icon(Icons.menu),
+                    child: const Icon(Icons.menu),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 6,
                   ),
                   Container(
@@ -36,10 +36,10 @@ class HomeScreen extends StatelessWidget {
                     width: 330,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(5),
-                      color: Color.fromRGBO(127, 53, 144, 0.22),
+                      color: const Color.fromRGBO(127, 53, 144, 0.22),
                     ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(5.0),
+                    child: const Padding(
+                      padding: EdgeInsets.all(5.0),
                       child: Row(
                         children: [
                           Icon(Icons.search),
@@ -82,7 +82,7 @@ class HomeScreen extends StatelessWidget {
                                             );
                                             return bloc;
                                           },
-                                          child: DetailNewsScreen(r),
+                                          child: DetailmovieScreen(r),
                                         );
                                       },
                                     ));
@@ -108,7 +108,7 @@ class HomeScreen extends StatelessWidget {
                                           r[index].title,
                                           textAlign: TextAlign.center,
                                           textDirection: TextDirection.ltr,
-                                          style: TextStyle(
+                                          style: const TextStyle(
                                             fontSize: 14,
                                             fontWeight: FontWeight.bold,
                                           ),
