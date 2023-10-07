@@ -7,7 +7,7 @@ class DetailMovie {
   String rank;
   String metascore;
   String imdbVotes;
-  List<String> genre; // Change the data type to a list of strings
+  List<String> genre;
 
   DetailMovie(
     this.title,
@@ -23,8 +23,7 @@ class DetailMovie {
 
   factory DetailMovie.fromJson(Map<String, dynamic> jsonObject) {
     final genreString = jsonObject['Genre'];
-    final genreList =
-        genreString.split(', '); // Split the genre string into a list
+    final genreList = genreString.split(', ');
 
     return DetailMovie(
       jsonObject['Title'],
@@ -35,7 +34,7 @@ class DetailMovie {
       jsonObject['imdbRating'],
       jsonObject['Metascore'],
       jsonObject['imdbVotes'],
-      genreList, // Assign the list of genres here
+      genreList,
     );
   }
 }

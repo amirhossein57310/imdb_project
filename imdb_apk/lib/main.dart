@@ -27,7 +27,7 @@ class ImdbApp extends StatelessWidget {
           bloc.add(InitialMovieEvent());
           return bloc;
         },
-        child: HomeScreen(),
+        child: const HomeScreen(),
       ),
     );
   }

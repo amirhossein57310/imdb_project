@@ -1,32 +1,3 @@
-// import 'package:dio/dio.dart';
-// import 'package:flutter/material.dart';
-
-// import '../model/detail_movie.dart';
-
-// abstract class ImovieDetailDatasource {
-//   Future<DetailMovie> getDetail(String id);
-// }
-
-// class MovieDetailRemoteDatasource extends ImovieDetailDatasource {
-//   final Dio _dio;
-//   MovieDetailRemoteDatasource(this._dio);
-//   @override
-//   Future<DetailMovie> getDetail(String id) async {
-//     try {
-//       var response = await _dio.get(
-//         '?apikey=713b564a&i=$id',
-//       );
-
-//       return response.data
-//           .map<DetailMovie>((jsonObject) => DetailMovie.fromJson(jsonObject))
-//           .toList();
-//     } on DioException catch (ex) {
-//       throw Text(
-//         ex.message.toString(),
-//       );
-//     }
-//   }
-// }
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
